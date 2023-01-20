@@ -1,0 +1,14 @@
+.headcoach_image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+
+    margin-top: -6rem;
+}
+
+@media (max-width: 1024px) {
+    .headcoach_image {
+        max-width: 200px;
+        margin-top: -3rem;
+    }
+}

@@ -1,0 +1,13 @@
+.hero {
+    background: url('../src/img/hero_bg.png');
+    background-size: cover;
+    background-position-x: 60%;
+    background-position-y: 10%;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height: auto;
+    }
+}
