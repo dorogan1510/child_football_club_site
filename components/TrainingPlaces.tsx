@@ -1,6 +1,10 @@
 import WarningIcon from '@mui/icons-material/Warning'
 import { Container, Paper, Stack, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
+import dynamic from 'next/dynamic'
+
+const YandexMap1 = dynamic(() => import('./YandexMap1'), { ssr: false })
+const YandexMap2 = dynamic(() => import('./YandexMap2'), { ssr: false })
 
 const TrainingPlaces = () => {
     return (
@@ -77,11 +81,7 @@ const TrainingPlaces = () => {
                     </Stack>
                 </Grid2>
                 <Grid2 xs={8}>
-                    <iframe
-                        src='https://yandex.ru/map-widget/v1/?um=constructor%3A364939120e6e8083b6c3dbcac7c39d850ef6cd2bd0c4c36cb7db963fbee51abb&amp;source=constructor'
-                        width='100%'
-                        height='400'
-                    ></iframe>
+                    <YandexMap1 />
                 </Grid2>
             </Grid2>
             <Typography variant='h4' sx={{ mb: '2rem' }}>
@@ -114,11 +114,7 @@ const TrainingPlaces = () => {
                     </Stack>
                 </Grid2>
                 <Grid2 xs={8}>
-                    <iframe
-                        src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa5b20eb7a5a298ed55f151d4b3b3fc76a9616fba7478e5f0a25937fe7b3ec981&amp;source=constructor'
-                        width='100%'
-                        height='400'
-                    ></iframe>
+                    <YandexMap2 />
                 </Grid2>
             </Grid2>
         </Container>

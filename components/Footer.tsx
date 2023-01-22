@@ -2,7 +2,7 @@ import { Box, Container, Stack, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../src/img/logo.png'
+import logo from '../src/img/logo.webp'
 import style from '../styles/Footer.module.scss'
 
 const Footer = () => {

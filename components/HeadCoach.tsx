@@ -1,6 +1,6 @@
 import { Paper, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
-import coach from '../src/img/head_coach.jpg'
+import coach from '../src/img/head_coach.webp'
 import style from '../styles/HeadCoach.module.scss'
 
 const HeadCoach = () => {

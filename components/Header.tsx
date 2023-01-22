@@ -10,7 +10,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Image from 'next/image'
 import * as React from 'react'
-import logo from '../src/img/logo.png'
+import logo from '../src/img/logo.webp'
 import style from '../styles/Header.module.scss'
 
 const pages = [
