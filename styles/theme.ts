@@ -1,14 +1,22 @@
-import { red } from '@mui/material/colors'
 import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: '5px',
+                },
+            },
+        },
+    },
     breakpoints: {
         values: {
             xs: 0,
             sm: 600,
             md: 1024,
             lg: 1200,
-            xl: 1536,
+            xl: 1920,
         },
     },
     palette: {
@@ -34,6 +42,11 @@ const theme = createTheme({
         h4: {
             '@media (max-width:1024px)': {
                 fontSize: '24px',
+            },
+        },
+        h5: {
+            '@media (max-width:1024px)': {
+                fontSize: '16px',
             },
         },
         body1: {

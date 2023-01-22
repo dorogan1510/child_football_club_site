@@ -1,32 +1,12 @@
 import {
-    Container,
-    Grid,
-    Card,
-    CardHeader,
-    CardContent,
     Box,
+    Card,
+    CardContent,
+    CardHeader,
+    Container,
     Typography,
-    CardActions,
-    Button,
 } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import React from 'react'
-import styles from '../styles/Reviews.module.scss'
-
-const tiers = [
-    {
-        title: 'Для старшей (2007-2009 г/р) и средней группы (2010-2012 г/р) ',
-        price: '1500',
-    },
-    {
-        title: 'Для младшей группы (2013 – 2016 г/р) ',
-        price: '1000',
-    },
-    {
-        title: 'Для детей участников СВО',
-        price: '30',
-    },
-]
 
 const Price = () => {
     return (
@@ -130,7 +110,7 @@ const Price = () => {
                             >
                                 <Typography
                                     component='h2'
-                                    variant='h4'
+                                    variant='h5'
                                     color='text.primary'
                                 >
                                     Предусмотрены льготные условия

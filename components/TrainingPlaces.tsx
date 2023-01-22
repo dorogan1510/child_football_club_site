@@ -1,16 +1,6 @@
-import {
-    Box,
-    Button,
-    Container,
-    Grid,
-    Paper,
-    Stack,
-    Typography,
-} from '@mui/material'
-import Grid2 from '@mui/material/Unstable_Grid2'
-import Link from 'next/link'
-import React from 'react'
 import WarningIcon from '@mui/icons-material/Warning'
+import { Container, Paper, Stack, Typography } from '@mui/material'
+import Grid2 from '@mui/material/Unstable_Grid2'
 
 const TrainingPlaces = () => {
     return (
@@ -66,13 +56,20 @@ const TrainingPlaces = () => {
                         </Paper>
                         <Paper elevation={6} sx={{ padding: '1rem' }}>
                             <Typography>
-                                2. Спортивный зал ГБУ школы № 4, улица
+                                2. Спортивный зал спорткомплекса по адресу:
+                                улица Луговцева, 54, посёлок городского типа
+                                Безенчук, Самарская область, 446252
+                            </Typography>
+                        </Paper>
+                        <Paper elevation={6} sx={{ padding: '1rem' }}>
+                            <Typography>
+                                3. Спортивный зал ГБУ школы № 4, улица
                                 Центральная, 89, п. г. т. Безенчук
                             </Typography>
                         </Paper>
                         <Paper elevation={6} sx={{ padding: '1rem' }}>
                             <Typography>
-                                3. Спортивный зал Сельскохозяйственного
+                                4. Спортивный зал Сельскохозяйственного
                                 техникума по адресу: ул. Тимирязева, 94, п. г.
                                 т. Безенчук
                             </Typography>

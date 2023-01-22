@@ -1,27 +1,7 @@
-import {
-    Box,
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    CardMedia,
-    Grid,
-    List,
-    ListItem,
-    Paper,
-    Stack,
-    Typography,
-    useTheme,
-} from '@mui/material'
-import React from 'react'
+import { Paper, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
 import coach from '../src/img/head_coach.jpg'
-import Grid2 from '@mui/material/Unstable_Grid2'
 import style from '../styles/HeadCoach.module.scss'
-import logo from '../src/img/logo.png'
-import medal from '../src/img/medal.png'
-import university from '../src/img/university.png'
-import school from '../src/img/school.png'
 
 const HeadCoach = () => {
     return (

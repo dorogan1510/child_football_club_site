@@ -1,34 +1,39 @@
 import React from 'react'
 import style from '../styles/Hero.module.scss'
 
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 
 const HeroSection = () => {
     return (
         <div className={style.hero}>
-            <Box
-                sx={{
-                    maxWidth: { xs: '80%', md: '70%' },
-                    color: 'white',
-                    padding: '6rem 10% 8rem 10%',
-                }}
-            >
-                <Typography variant='h1' gutterBottom>
-                    Детский футбольный клуб &quot;Безенчук&quot;
-                </Typography>
-                <Typography variant='body1' sx={{ marginBottom: '3rem' }}>
-                    Мы воспитываем в детях сильную, уверенную в себе личность,
-                    устойчивую к физическим и эмоциональным нагрузкам,
-                    приспособленным к современной жизни.
-                </Typography>
-                <Button
-                    variant='contained'
-                    size='large'
-                    sx={{ borderRadius: '10px' }}
+            <Container>
+                <Box
+                    sx={{
+                        maxWidth: { xs: '80%', md: '70%' },
+                        color: 'white',
+                        padding: '6rem 0 8rem 0',
+                    }}
                 >
-                    Записаться на пробный урок
-                </Button>
-            </Box>
+                    <Typography variant='h1' gutterBottom>
+                        Детский футбольный клуб &quot;Безенчук&quot;
+                    </Typography>
+                    <Typography variant='body1' sx={{ marginBottom: '3rem' }}>
+                        Мы воспитываем в детях сильную, уверенную в себе
+                        личность, устойчивую к физическим и эмоциональным
+                        нагрузкам, приспособленным к современной жизни.
+                    </Typography>
+                    <Button
+                        variant='contained'
+                        href={
+                            'https://api.whatsapp.com/send?phone=79370658133&text='
+                        }
+                        target='_blank'
+                        sx={{ textAlign: 'center' }}
+                    >
+                        Записаться на пробное занятие
+                    </Button>
+                </Box>
+            </Container>
         </div>
     )
 }

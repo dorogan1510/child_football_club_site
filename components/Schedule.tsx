@@ -7,8 +7,6 @@ import {
     Typography,
 } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import React from 'react'
-import styles from '../styles/Offer.module.scss'
 
 const Schedule = () => {
     return (
@@ -37,7 +35,7 @@ const Schedule = () => {
                     >
                         <CardContent>
                             <Typography variant='h5' component='div'>
-                                Младшая группа
+                                Старшая группа
                             </Typography>
                             <Typography
                                 sx={{ fontSize: 14 }}
@@ -52,8 +50,14 @@ const Schedule = () => {
                                 вторник, четверг, воскресенье с 15.30-17.00.
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button variant='contained'>
+                        <CardActions sx={{ color: 'white' }}>
+                            <Button
+                                href={
+                                    'https://api.whatsapp.com/send?phone=79370658133&text='
+                                }
+                                target='_blank'
+                                variant='contained'
+                            >
                                 Записаться на пробное занятие
                             </Button>
                         </CardActions>
@@ -88,8 +92,14 @@ const Schedule = () => {
                                 понедельник, среда, пятница с 15.30- 17.00
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button variant='contained'>
+                        <CardActions sx={{ color: 'white' }}>
+                            <Button
+                                href={
+                                    'https://api.whatsapp.com/send?phone=79370658133&text='
+                                }
+                                target='_blank'
+                                variant='contained'
+                            >
                                 Записаться на пробное занятие
                             </Button>
                         </CardActions>
@@ -109,7 +119,7 @@ const Schedule = () => {
                     >
                         <CardContent>
                             <Typography variant='h5' component='div'>
-                                Старшая группа
+                                Младшая группа
                             </Typography>
                             <Typography
                                 sx={{ fontSize: 14 }}
@@ -124,8 +134,14 @@ const Schedule = () => {
                                 среда, пятница с 17.00-18.00
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button variant='contained'>
+                        <CardActions sx={{ color: 'white' }}>
+                            <Button
+                                href={
+                                    'https://api.whatsapp.com/send?phone=79370658133&text='
+                                }
+                                target='_blank'
+                                variant='contained'
+                            >
                                 Записаться на пробное занятие
                             </Button>
                         </CardActions>
@@ -154,8 +170,14 @@ const Schedule = () => {
                                 тренировочного поля
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button variant='contained'>
+                        <CardActions sx={{ color: 'white' }}>
+                            <Button
+                                href={
+                                    'https://api.whatsapp.com/send?phone=79370658133&text='
+                                }
+                                target='_blank'
+                                variant='contained'
+                            >
                                 Записаться на пробное занятие
                             </Button>
                         </CardActions>

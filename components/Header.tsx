@@ -1,20 +1,16 @@
-import * as React from 'react'
+import MenuIcon from '@mui/icons-material/Menu'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
-import IconButton from '@mui/material/IconButton'
-import Typography from '@mui/material/Typography'
-import Menu from '@mui/material/Menu'
-import MenuIcon from '@mui/icons-material/Menu'
-import Container from '@mui/material/Container'
-import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
-import Tooltip from '@mui/material/Tooltip'
+import Container from '@mui/material/Container'
+import IconButton from '@mui/material/IconButton'
+import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import AdbIcon from '@mui/icons-material/Adb'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
 import Image from 'next/image'
+import * as React from 'react'
 import logo from '../src/img/logo.png'
-import Link from 'next/link'
 import style from '../styles/Header.module.scss'
 
 const pages = [
@@ -41,6 +37,10 @@ const pages = [
     {
         id: '#id6',
         title: 'Тренировочные площадки',
+    },
+    {
+        id: '#id7',
+        title: 'Родителям',
     },
 ]
 
@@ -75,7 +75,7 @@ function ResponsiveAppBar() {
                         href='/'
                         sx={{
                             mr: 2,
-                            display: { xs: 'none', md: 'flex' },
+                            display: { xs: 'none', lg: 'flex' },
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
@@ -89,7 +89,7 @@ function ResponsiveAppBar() {
                         href=''
                         sx={{
                             mr: 2,
-                            display: { xs: 'flex', md: 'none' },
+                            display: { xs: 'flex', lg: 'none' },
                             flexGrow: 1,
                             color: 'inherit',
                             textDecoration: 'none',
@@ -101,7 +101,7 @@ function ResponsiveAppBar() {
                         sx={{
                             flexGrow: 1,
                             justifyContent: 'flex-end',
-                            display: { xs: 'flex', md: 'none' },
+                            display: { xs: 'flex', lg: 'none' },
                         }}
                     >
                         <IconButton
@@ -128,7 +128,7 @@ function ResponsiveAppBar() {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: 'block', md: 'none' },
+                                display: { xs: 'block', lg: 'none' },
                             }}
                         >
                             {pages.map(page => (
@@ -158,7 +158,7 @@ function ResponsiveAppBar() {
                             flexGrow: 1,
                             justifyContent: 'flex-end',
 
-                            display: { xs: 'none', md: 'flex' },
+                            display: { xs: 'none', lg: 'flex' },
                         }}
                     >
                         {pages.map(page => (

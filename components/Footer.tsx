@@ -1,120 +1,113 @@
-import {
-    Grid,
-    List,
-    ListItem,
-    ListItemIcon,
-    ListItemText,
-    Paper,
-    Stack,
-    Typography,
-} from '@mui/material'
-import Link from 'next/link'
-import React from 'react'
-import ManIcon from '@mui/icons-material/Man'
-import { Container } from '@mui/system'
+import { Box, Container, Stack, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import style from '../styles/Footer.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from '../src/img/logo.png'
+import style from '../styles/Footer.module.scss'
 
 const Footer = () => {
     return (
-        <Stack
-            sx={{
-                backgroundColor: 'primary.main',
-                padding: '2rem',
-                color: 'white',
-            }}
-        >
-            {/* <Typography sx={{ mb: 2, textAlign: 'center' }} variant='h5'>
-                Контакты
-            </Typography> */}
-            <Stack
-                justifyContent={'space-between'}
-                padding={'0 2rem'}
-                alignItems={{ xs: 'center', md: 'start' }}
-                gap={2}
-                flexDirection={{ xs: 'column', md: 'row' }}
+        <Box sx={{ backgroundColor: 'primary.main' }}>
+            <Container
+                maxWidth='xl'
+                sx={{
+                    padding: '2rem',
+                    color: 'white',
+                }}
             >
-                <Grid2 textAlign={{ xs: 'center', md: 'left' }}>
-                    <Typography variant='h5' gutterBottom>
-                        Главный тренер:
-                    </Typography>
-                    <Typography variant='h6' gutterBottom>
-                        Задорожный Вячеслав Александрович
-                    </Typography>
-                    <Stack gap={1} justifyContent='space-between'>
-                        <Link className={style.link} href='callto:+79370658133'>
-                            +7 937 065 81 33
-                        </Link>
-                        <Link
-                            className={style.link}
-                            href='mailto:dfk.bezenchuk@yandex.ru'
+                <Stack
+                    justifyContent={'space-between'}
+                    padding={'0 2rem'}
+                    alignItems={'center'}
+                    gap={2}
+                    flexDirection={{ xs: 'column', md: 'row' }}
+                    sx={{ maxWidth: '1920px' }}
+                >
+                    <Grid2 textAlign={{ xs: 'center', md: 'left' }}>
+                        <Typography variant='h5' gutterBottom>
+                            Главный тренер:
+                        </Typography>
+                        <Typography variant='h6'>
+                            Задорожный Вячеслав Александрович
+                        </Typography>
+                        <Stack
+                            justifyContent='space-between'
+                            sx={{ mb: '1rem' }}
                         >
-                            dfk.bezenchuk@yandex.ru
-                        </Link>
-                    </Stack>
-                </Grid2>
-                <Image
-                    className={style.logo}
-                    src={logo}
-                    alt={'logo'}
-                    width={100}
-                />
-                <Grid2 textAlign={{ xs: 'center', md: 'left' }}>
-                    <Typography variant='h5' gutterBottom>
-                        Родительский комитет:
-                    </Typography>
-                    <Typography variant='h6'>
-                        Курышов Михаил Николаевич
-                    </Typography>
-                    <Typography variant='body2' gutterBottom>
-                        +7 960 814 97 59
-                    </Typography>
-                    <Typography variant='h6'>
-                        Бондаренко Владимир Иванович
-                    </Typography>
-                    <Typography variant='body2' gutterBottom>
-                        +7 917 038 94 42
-                    </Typography>
-                    <Typography variant='h6'>
-                        Глазунов Александр Николаевич
-                    </Typography>
-                    <Typography variant='body2' gutterBottom>
-                        +7 927 700 02 23
-                    </Typography>
-                    {/* <List sx={{ color: 'white' }}>
-                        <ListItem>
-                            <ListItemText
-                                secondaryTypographyProps={{
-                                    color: 'white',
-                                }}
-                                primary='Курышов Михаил Николаевич'
-                                secondary='+7 960 814 97 59'
-                            />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText
-                                secondaryTypographyProps={{
-                                    color: 'white',
-                                }}
-                                primary='Бондаренко Владимир Иванович'
-                                secondary='+7 917 038 94 42'
-                            />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText
-                                secondaryTypographyProps={{
-                                    color: 'white',
-                                }}
-                                primary='Глазунов Александр Николаевич'
-                                secondary='+7 927 700 02 23'
-                            />
-                        </ListItem>
-                    </List> */}
-                </Grid2>
-            </Stack>
-        </Stack>
+                            <Link
+                                className={style.link}
+                                href='tel:+79370658133'
+                            >
+                                +7 937 065 81 33
+                            </Link>
+                            <Link
+                                className={style.link}
+                                href='mailto:dfk.bezenchuk@yandex.ru'
+                            >
+                                dfk.bezenchuk@yandex.ru
+                            </Link>
+                        </Stack>
+                        <Stack>
+                            <Typography variant='h5' gutterBottom>
+                                Наша группа Вконтакте:
+                            </Typography>
+                            <Link
+                                className={style.link}
+                                target='_blank'
+                                href='https://vk.com/public204787561'
+                            >
+                                https://vk.com/public204787561
+                            </Link>
+                        </Stack>
+                    </Grid2>
+
+                    <Image
+                        className={style.logo}
+                        src={logo}
+                        alt={'logo'}
+                        width={100}
+                    />
+                    <Grid2 textAlign={{ xs: 'center', md: 'left' }}>
+                        <Typography variant='h5' gutterBottom>
+                            Родительский комитет:
+                        </Typography>
+                        <Typography variant='h6'>
+                            Курышов Михаил Николаевич
+                        </Typography>
+                        <Typography variant='body2' gutterBottom>
+                            <Link
+                                className={style.link}
+                                href='tel:+79608149759'
+                            >
+                                +7 960 814 97 59
+                            </Link>
+                        </Typography>
+                        <Typography variant='h6'>
+                            Бондаренко Владимир Иванович
+                        </Typography>
+                        <Typography variant='body2' gutterBottom>
+                            <Link
+                                className={style.link}
+                                href='tel:+79170389442'
+                            >
+                                +7 917 038 94 42
+                            </Link>
+                        </Typography>
+                        <Typography variant='h6'>
+                            Глазунов Александр Николаевич
+                        </Typography>
+                        <Typography variant='body2' gutterBottom>
+                            <Link
+                                className={style.link}
+                                href='tel:+79277000223'
+                            >
+                                +7 927 700 02 23
+                            </Link>
+                        </Typography>
+                    </Grid2>
+                </Stack>
+            </Container>
+        </Box>
     )
 }
 

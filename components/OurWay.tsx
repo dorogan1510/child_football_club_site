@@ -1,20 +1,7 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import Button from '@mui/material/Button'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import { Step, StepContent, Stepper } from '@mui/material'
+import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import {
-    Paper,
-    Stack,
-    Step,
-    StepConnector,
-    StepContent,
-    StepLabel,
-    Stepper,
-} from '@mui/material'
 
 export default function BasicCard() {
     return (
@@ -91,10 +78,9 @@ export default function BasicCard() {
                         />
                         <StepContent>
                             <Typography variant='body1'>
-                                Приглашение и посещение футболистов,
-                                специалистов и футбольных функционеров из
-                                рейтинговых клубов страны для демонстрации
-                                мастер-классов и обмена опытом
+                                Регулярное предъявление воспитанников клуба для
+                                участия в просмотровых играх рейтинговых
+                                академий футбольных клубов страны
                             </Typography>
                         </StepContent>
                     </Step>
